@@ -46,7 +46,7 @@ Barra de scroll cuando el mouse esta sobre ella
 
 */
 ::-webkit-scrollbar-thumb:hover {
-	background: #ce1c1c;
+	background:var(--verde);
 }
 
 
@@ -117,6 +117,7 @@ header {
 		gap: 15px;
 		overflow: hidden;
 		overflow-x: scroll;
+		justify-content: center;
 
 	}
 
@@ -124,7 +125,7 @@ header {
 
 		height: 70px;
 		flex: 0 0 80px;
-		background-color: rgb(205, 225, 225);
+		/* background-color: rgb(205, 225, 225); */
 		border-radius: 20px;
 		display: flex;
 		flex-direction: column;
@@ -145,7 +146,7 @@ header {
 	}
 
 	a:visited {
-		color: violet;
+		color: var(--gris);
 	}
 
 	a:hover {
@@ -252,11 +253,16 @@ main {
 	.imagen_resto {
 		position: absolute;
 		height: 100%;
-		width: 45%;
+		width: 46%;
 		/* background-image: url("../img/restaurante.jpg"); */
 		background-position: center;
 		background-size: cover;
-		border-radius: 15px 0 0 15px;
+		
+		img{
+			height: 100%;
+			width: 100%;
+			border-radius: 5px 0 0 5px;
+		}
 	}
 	.desc_resto{
 		position: absolute;

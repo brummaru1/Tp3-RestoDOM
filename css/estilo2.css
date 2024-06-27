@@ -14,7 +14,7 @@ body {
 
 
 main.mainResto {
-    height: 100%;
+    height: 80%;
     padding: 0;
     .linkResto {
         height: 60%;
@@ -134,13 +134,13 @@ nav.menu_inferior {
 }
 
 .agregarCarrito {
-    bottom: 0;
+    /* bottom: 0; */
     background-color: var(--gris-bg);
     width: 100%;
     padding: 20px;
     display: flex;
     gap: 3px;
-    position: absolute;
+    position: absolute; 
     margin-bottom: 100px;
     .botonCarrito {
         height: 40px;

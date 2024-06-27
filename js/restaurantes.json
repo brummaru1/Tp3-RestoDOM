@@ -17,12 +17,13 @@
       "direccion":"Taiwan, Chinchunguan 4565",
       "horario": "9:00 a 21:00",
       "puntuacion": 4.3,
-      "rango": "3"
+      "rango": "3",
+      "especialidad":"EMilanesa"
     },
     {
       "truck_id": "71",
       "name": "Koma Sliders",
-      "category": "Korean",
+      "category": "",
       "bio": "\"It's Korean.  It's American. It's Slider-licious!\"  True to our moniker, Koma Sliders is food truck that stands out by fusing two different cuisines and serving up something different and delicious.   From our cook-to-order fully loaded fries that come topped off with mozzarella cheese, Bulgogi beef, caramelised kimchi, and aioli + spicy mayo.  To the meats that are prepared in our original, made-from-scratch marinades.  To our style of cooking, juicy Korean BBQ meats cooked right in front of your eyes for our sliders.   Everything has a Korean inspiration behind it.  ",
       "avatar": {
         "src": "https://www.bnefoodtrucks.com.au/sites/foodtrucks/files/styles/avatarlarge/public/images/Koma%20Sliders/redkomalogoolaf_0.jpg?itok=1Er2gbGN",
@@ -41,7 +42,8 @@
       "direccion":"Buenos Aires, Santo Domingo 1178",
       "horario": "19:00 a 5:00",
       "puntuacion": 3.7,
-      "rango": "1"
+      "rango": "1",
+      "especialidad":"Ravioles"
     },
     {
       "truck_id": "91",
@@ -61,7 +63,8 @@
       "direccion":"Montevideo, San Petesburgo 998",
       "horario": "18:00 a 00:00",
       "puntuacion": 4.3,
-      "rango": "5"
+      "rango": "5",
+      "especialidad":"Ravioles"
     },
     {
       "truck_id": "96",
@@ -85,7 +88,8 @@
       "direccion":"Nueva York, Los Angeles 6787",
       "horario": "00:00 a 06:00",
       "puntuacion": 4.9,
-      "rango": "3"
+      "rango": "3",
+      "especialidad":"Asado"
     },
     {
       "truck_id": "106",
@@ -109,7 +113,8 @@
       "direccion":"Moscú, nkNbNKfJ 2234",
       "horario": "9:00 a 15:00",
       "puntuacion": 2.2,
-      "rango": "2"
+      "rango": "2",
+      "especialidad":"Milanesa"
     },    
     {
         "truck_id": "116",
@@ -133,7 +138,8 @@
         "direccion":"America, EEUU 2476",
         "horario": "15:00 a 21:00",
         "puntuacion": 3.5,
-        "rango": "7"
+        "rango": "7",
+        "especialidad":"Humita"
       },
       {
         "truck_id": "121",
@@ -157,7 +163,8 @@
         "direccion":"Pilar, Bogota 1244",
         "horario": "9:00 a 21:00",
         "puntuacion": 5.0,
-        "rango": "3"
+        "rango": "3",
+        "especialidad":"Asado"
       },
       {
         "truck_id": "131",
@@ -181,7 +188,8 @@
         "direccion":"Malvinas Argentinas, Colombia 147",
         "horario": "10:00 a 17:00",
         "puntuacion": 4.7,
-        "rango": "9"
+        "rango": "9",
+        "especialidad":"Empanadas"
       },
       {
         "truck_id": "146",
@@ -205,7 +213,8 @@
         "direccion":"Berlin, Alfredo Palacios 3972",
         "horario": "5:00 a 13:00",
         "puntuacion": 4.3,
-        "rango": "3"
+        "rango": "3",
+        "especialidad":"Asado"
       },
       {
         "truck_id": "151",
@@ -229,6 +238,7 @@
         "direccion":"Paris, Vera Paz 595",
         "horario": "12:00 a 20:00",
         "puntuacion": 4.9,
-        "rango": "6"
+        "rango": "6",
+        "especialidad":"Milanesa"
       }
 ]

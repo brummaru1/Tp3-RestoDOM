@@ -94,11 +94,6 @@ fetch("js/platos_argentinos.json")
     <p class="p10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum pariatur totam, optio magnam.
     </p>
 
-</section>`
-
-
-
-
-    }}})
+</section>`}}})
 
     

@@ -1,0 +1,346 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root{
+	--verde: rgb(19,209,146);
+	--gris: rgb(136,136,136);
+}
+
+.verde_txt{
+	color: var(--verde);
+}
+
+.gris_txt{
+	color: var(--gris);
+}
+
+
+
+/* width 
+Ancho y alto del contenedor SCROLLBAR
+*/
+::-webkit-scrollbar {
+	height: 5px;
+}
+
+/* Track 
+caminito donde se mueve la barra
+*/
+::-webkit-scrollbar-track {
+	background: #ffffff;
+}
+
+/* Handle 
+barra de scroll
+*/
+::-webkit-scrollbar-thumb {
+	background: gray;
+	border-radius: 3px;
+}
+
+/* Handle on hover 
+Barra de scroll cuando el mouse esta sobre ella
+
+*/
+::-webkit-scrollbar-thumb:hover {
+	background: #ce1c1c;
+}
+
+
+
+body {
+	height: 100vh;
+	width: 100%;
+	font-family: sans-serif;
+}
+
+.f28 {
+	font-size: 28pt !important;
+}
+
+.f20 {
+	font-size: 20pt !important;
+}
+
+.f10 {
+	font-size: 10pt !important;
+}
+
+header {
+	height: 75%;
+	width: 100%;
+	flex-direction: column;
+	gap: 15px;
+
+	.portada {
+		height: 65%;
+		width: 100%;
+		background-color: lightblue;
+		background: linear-gradient(180deg, rgba(255, 255, 255, 0.450), rgba(0, 0, 0, 0.800));
+		background-color: blue;
+		background-image: url("../img/restaurante.jpg");
+		background-position: center;
+		background-size: cover;
+		display: flex;
+		position: relative;
+
+	}
+
+	.portada::before {
+
+		content: '';
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		background: linear-gradient(180deg, rgba(255, 255, 255, 0.450), rgba(0, 0, 0, 0.800));
+	}
+
+	.saludo {
+		color: rgb(255, 255, 255, 0.8);
+		position: absolute;
+		left: 5%;
+		bottom: 10%;
+		z-index: 1;
+	}
+
+	/* : pseudoclase  ::pseudoelemento */
+
+	nav.categorias {
+		/* height: 25%; */
+		/* width: 100% auto; */
+		background-color: white;
+		padding: 30px;
+		display: flex;
+		gap: 15px;
+		overflow: hidden;
+		overflow-x: scroll;
+
+	}
+
+	a.btn-cat {
+
+		height: 70px;
+		flex: 0 0 80px;
+		background-color: rgb(205, 225, 225);
+		border-radius: 20px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-decoration: none;
+
+	}
+
+	/*ancor: cuatros intancias de un link.
+	link: Instancia incial de un link.
+	active: Cuando hacemos click en el enlace.
+	visited: Cuando abrimos y redireccionamos a un link.
+	hover: Cuando pasamos el mouse por el enlace o elemento.
+	*/
+	a:link {
+		color:gray;
+	}
+
+	a:visited {
+		color: violet;
+	}
+
+	a:hover {
+		color: black;
+	}
+
+	a:active {
+		color: aqua;
+		text-shadow: 0 0 10px black;
+	}
+
+}
+
+.buscador {
+	display: flex;
+	position: absolute;
+	bottom: -20px;
+	left: 5%;
+	height: 40px;
+	width: 90%;
+	margin: auto;
+	background-color: beige;
+	box-shadow: 0 10px 20px -10px rgb(0, 0, 0, 0.7);
+	overflow: hidden;
+	z-index: 1;
+
+	.icono {
+		width: 40px;
+		background-color: aquamarine;
+		display: grid;
+		place-items: center;
+	}
+
+	input[type=search] {
+		border: none;
+		outline: none;
+		padding: 10px;
+		width: calc(100% - 80px);
+		cursor: pointer;
+	}
+
+	input[type=submit] {
+		width: 40px;
+		border: none;
+		outline: none;
+		background-color: rgb(255, 255, 255, 0.8);
+		cursor: pointer;
+		transition: all 0.3s ease-in-out;
+
+	}
+
+	input[type=submit]:hover {
+		transform: scale(1.2);
+
+	}
+}
+
+main {
+	height: 100px auto;
+	width: 100%;
+	padding: 20px;
+
+	
+	.restaurantes {
+		height: 100px auto;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+
+
+		.resto {
+			height: 160px;
+			width: 100%;
+			flex: 0 0 160px;
+			position: relative;
+			box-shadow: 0 0 8px -3px black;
+			border-radius: 15px;
+
+			.distancia{
+				position: absolute;
+				top:5px;
+				left: 30%;
+				color: white;
+				text-shadow: 0 0 5px black;
+				/*z-index: 400;
+				Si pongo distancia arriba de todo, poner z-index
+				para que se superponga a la imagen
+				*/
+			}
+			.puntuacion{
+				position: absolute;
+				right: -10px;
+				top:-10px;
+				background-color: var(--verde);
+				padding: 10px;
+				border-radius: 10px 0 10px 0;
+				font-weight: bolder;
+				color: white;
+				box-shadow: 0 0 8px -3px black;
+			}
+		}
+	}
+	.imagen_resto {
+		position: absolute;
+		height: 100%;
+		width: 45%;
+		/* background-image: url("../img/restaurante.jpg"); */
+		background-position: center;
+		background-size: cover;
+		border-radius: 15px 0 0 15px;
+	}
+	.desc_resto{
+		position: absolute;
+		right: 0;
+		height: 100%;
+		width :60%;
+		background-color: white;
+		border-radius: 0 15px 15px;
+		border-bottom-left-radius: 30px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		padding: 10px;
+		.precio_val{
+			display: flex;
+			justify-content: space-between;
+				.valoracion{
+					display: flex;
+					align-items: center;
+					justify-content: center;
+				}
+		}
+	}
+
+
+}
+a{
+	text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (orientation=landscape) {
+	/*landscape: apisado, en compu*/
+	/* height */
+	main {
+		.restaurantes{
+			flex-wrap: wrap;
+			flex-direction: row;
+			.resto{
+				height: 160px;
+				flex: 0 0 calc(50% - 30px);
+			}
+	
+		}
+	}
+	::-webkit-scrollbar {
+		height: 0px;
+	}
+}

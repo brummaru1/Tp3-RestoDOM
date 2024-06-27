@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <header class="cerrarMenu">
+        
+        <div class="headerMenu">
+            <a href="index.html">X</a>
+            <h3 class="titulo">La tablita</h3>
+        </div>
+    </header>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/material-icons.css">
+    <link rel="stylesheet" href="css/estilo2.css">
+    
+
+</head>
+
+<body>
+    <main class="mainResto">
+       
+    </main>
+ <nav class="agregarCarrito">
+        <div class="flex">
+        <div class="flex">
+            <button id="btnrestar" class="iconos botonCarrito" onclick="restar()">remove</button>
+            <p class="botonCarrito" id="cantidad"></p>
+            <button id="btnsumar" class="iconos botonCarrito" onclick="sumar()">add</button>
+        </div>
+        <button class="btnAgregar" onclick="agregarPedido()"><i class="iconos">post_add</i>Agregar al pedido</button>
+    </div>
+    <span id="subtotal"></span>
+    </nav> 
+
+ 
+    <nav class="menu_inferior">
+        <button value=''><a href="menu.html">DETALLES</a></button>
+        <button value=''><a href="menu.html">MENU</a></button>
+        <button value=''><a href="resena.html">RESEÑAS</a></button>
+    </nav> 
+
+
+    
+    <script src="js/leer-jsonComida.js"></script>
+    
+</body>
+
+</html>
